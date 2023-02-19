@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "fLt+YxvkJj+7/uNCk+oNL7LGBNIMkJ68EVaRdYlAMvcIO0BzOrWXY53lZMzsrChbHb3b3usTeAO+84Hx5f1rbA==",
+  "success": false,
+  "projectFilePath": "D:\\TEKUS\\Proyectos\\App\\TekusAppBack\\TekusAppBack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danii\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\TEKUS\\Proyectos\\App\\TekusAppBack.Entites\\TekusAppBack.Entites.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "D:\\TEKUS\\Proyectos\\App\\TekusAppBack.Entites\\TekusAppBack.Entites.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
