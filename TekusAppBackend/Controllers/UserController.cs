@@ -2,10 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TekusAppBackend.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System.Xml;
-
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TekusAppBackend.Controllers
 {
@@ -20,14 +16,9 @@ namespace TekusAppBackend.Controllers
             _context = context;
         }
 
-        //public ConnectionSQLServer GetContext()
-        //{
-        //    return _context;
-        //}
-
         //GET: api/<UserController>
-        [HttpGet("GetAllUser/{IdUser}")]
-        public async Task<ActionResult<IEnumerable<TA_User>>> GetAllUser(int idUser)
+        [HttpGet("GetAllUser")]
+        public async Task<ActionResult<IEnumerable<TA_User>>> GetAllUser()
         {
             var repoUser = _context.TA_Users;
 
@@ -35,19 +26,19 @@ namespace TekusAppBackend.Controllers
         }
 
         //GET: api/<UserController>
-        [HttpGet("GetUser/{IdUser}")]
+        [HttpGet("GetUser/{idUser}")]
         public async Task<ActionResult<TA_User>> GetUser(int idUser)
         {
             var repoUser = _context.TA_Users;
 
-            var entity = await repoUser.FindAsync(idUser); 
+            var user = await repoUser.FindAsync(idUser); 
 
-            if (entity == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return entity;
+            return user;
         }
 
         //POST api/<UserController>
@@ -68,10 +59,14 @@ namespace TekusAppBackend.Controllers
             return CreatedAtRoute("GetById", new { id = user.Id_User }, user);
         }
 
-        [HttpPut("UpdateUser/{id}/{userData}")]
-        public async Task<IActionResult> Update(int id, [FromBody] TA_User user)
+        //POST api/<UserController>
+        // Actualizar usuario
+        [HttpPut("UpdateUser/{id}")]
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] TA_User user)
         {
             var repoUser = _context.TA_Users;
+
+            user.Id_User = id;
 
             if (user == null || id != user.Id_User)
             {
