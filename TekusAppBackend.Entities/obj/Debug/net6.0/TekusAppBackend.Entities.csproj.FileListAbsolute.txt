@@ -1,0 +1,12 @@
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\bin\Debug\net6.0\TekusAppBackend.Entities.deps.json
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\bin\Debug\net6.0\TekusAppBackend.Entities.dll
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\bin\Debug\net6.0\TekusAppBackend.Entities.pdb
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.csproj.AssemblyReference.cache
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.AssemblyInfoInputs.cache
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.AssemblyInfo.cs
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.csproj.CoreCompileInputs.cache
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.dll
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\refint\TekusAppBackend.Entities.dll
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\TekusAppBackend.Entities.pdb
+D:\TEKUS\Proyectos\TekusApp\TekusAppBackend.Entities\obj\Debug\net6.0\ref\TekusAppBackend.Entities.dll

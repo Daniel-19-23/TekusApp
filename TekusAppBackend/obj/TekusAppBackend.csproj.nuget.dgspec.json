@@ -4,14 +4,14 @@
     "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj": {}
   },
   "projects": {
-    "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj": {
+    "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\TekusAppBackend.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj",
-        "projectName": "TekusAppBackend",
-        "projectPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj",
+        "projectUniqueName": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\TekusAppBackend.Entities.csproj",
+        "projectName": "TekusAppBackend.Entities",
+        "projectPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\TekusAppBackend.Entities.csproj",
         "packagesPath": "C:\\Users\\danii\\.nuget\\packages\\",
-        "outputPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\obj\\",
+        "outputPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danii\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +39,74 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj",
+        "projectName": "TekusAppBackend",
+        "projectPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\TekusAppBackend.csproj",
+        "packagesPath": "C:\\Users\\danii\\.nuget\\packages\\",
+        "outputPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\danii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\TekusAppBackend.Entities.csproj": {
+                "projectPath": "D:\\TEKUS\\Proyectos\\TekusApp\\TekusAppBackend.Entities\\TekusAppBackend.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.SqlServer.Server": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TekusAppBackend", "TekusAppBackend.csproj", "{FA08FBC2-A836-4BD5-AE11-3B13053EC4AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TekusAppBackend.Entities", "..\TekusAppBackend.Entities\TekusAppBackend.Entities.csproj", "{CADA32FE-F084-47FB-8BB2-62D680E1D2DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FA08FBC2-A836-4BD5-AE11-3B13053EC4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA08FBC2-A836-4BD5-AE11-3B13053EC4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA08FBC2-A836-4BD5-AE11-3B13053EC4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADA32FE-F084-47FB-8BB2-62D680E1D2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADA32FE-F084-47FB-8BB2-62D680E1D2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADA32FE-F084-47FB-8BB2-62D680E1D2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADA32FE-F084-47FB-8BB2-62D680E1D2DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
