@@ -2,18 +2,24 @@
 using Microsoft.AspNetCore.Mvc;
 using TekusAppBackend.Contexts;
 using Microsoft.EntityFrameworkCore;
+using TekusAppBackend.Service;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TekusAppBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly ConnectionSQLServer _context;
+        //private readonly IUserService _userService;
 
+        //public UserController(ConnectionSQLServer context, IUserService userService)
         public UserController(ConnectionSQLServer context)
         {
             _context = context;
+            //_userService = userService;
         }
 
         //GET: api/<UserController>
