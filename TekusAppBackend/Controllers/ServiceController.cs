@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TekusAppBackend.Contexts;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace TekusAppBackend.Controllers
 {
@@ -22,7 +23,16 @@ namespace TekusAppBackend.Controllers
         {
             var repoService = _context.TA_Services;
 
-            return await repoService.ToListAsync();
+            var service = new List<TA_Service>();
+
+            service = await repoService.ToListAsync();
+
+            for (int i = 0; i < service.Count; i++)
+            {
+                service[i].HourValue_Service = ConvertToUSD(service[i].HourValue_Service);
+            }
+
+            return service;
         }
 
         // GET api/<ServiceController>/5
@@ -37,6 +47,8 @@ namespace TekusAppBackend.Controllers
             {
                 return NotFound();
             }
+
+            service.HourValue_Service = ConvertToUSD(service.HourValue_Service);
 
             return service;
         }
@@ -107,6 +119,19 @@ namespace TekusAppBackend.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private string ConvertToUSD(string hourValue)
+        {
+            // Para marcar tipo de moneda
+            var specifier = "C";
+            var culture = CultureInfo.CreateSpecificCulture("en-US");
+            var data = Int32.Parse(hourValue);
+            var valueUSD = data.ToString(specifier, culture);
+
+            hourValue = valueUSD;
+
+            return hourValue;
         }
     }
 }
