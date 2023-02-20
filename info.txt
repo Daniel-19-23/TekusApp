@@ -1,0 +1,14 @@
+Para el frontend todavía quedo faltando bastante con relación 
+a ser una interfaz mas dinámica y poder traer las correspondientes
+consultas de las API y enseñar los datos de una manera mas cómoda para
+el usuario
+
+La parte de seguridad es mas interna del back para no facilitar las
+consultas de las API sin autorización, esto lo podrían mejorar para
+validarlo propiamente con login y darle mas seguridad al campo "password"
+
+Con mas tiempo creo que podría agradar muchas mas pruebas unitarias
+ya que no es algo con lo que este muy familiarizado en usar en mi
+entorno de trabajo
+
+¡Gracias por la oportunidad!
